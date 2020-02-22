@@ -28,7 +28,7 @@ class Posts extends Component {
                         Object.keys(news).map(post => (
                             <Card className='mt-3'  key={news[post].id}>
                                 <CardBody>
-                                    {news[post].image ? <CardImg top width="100%" src={`${apiURL}/uploads/${news[post].image}`} alt="Card image cap" style={styles}/>: null}
+                                    {news[post].image ? <CardImg top width="100%" src={`${apiURL}/uploads/${news[post].image}`} alt="Image" style={styles}/>: null}
                                     <CardTitle>{news[post].title}</CardTitle>
                                     <CardSubtitle>At {news[post].date}</CardSubtitle>
                                     <NavLink to={`/news/${news[post].id}`} className='d-block'>Read Full Post>></NavLink>
