@@ -27,6 +27,7 @@ class OnePost extends Component {
         this.props.getComments(this.props.match.params.id)
     }
     submitFormHandler = async event => {
+
         event.preventDefault();
         await this.props.sendComment(this.state)
 
@@ -79,7 +80,7 @@ class OnePost extends Component {
                         </FormGroup>
                         <FormGroup>
                             <Label for="comment">Comment</Label>
-                            <Input type="textarea" name="comment" id="comment" placeholder="Enter your text" onChange={this.inputChangeHandler}/>
+                            <Input type="textarea" name="comment" id="comment" placeholder="Enter your text" onChange={this.inputChangeHandler} required/>
                         </FormGroup>
                         <Button color="primary">Add</Button>
                     </Form>

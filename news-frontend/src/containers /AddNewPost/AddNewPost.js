@@ -36,11 +36,11 @@ class AddNewPost extends Component {
                     <h1>Add new posts</h1>
                     <FormGroup>
                         <Label for="title">Title</Label>
-                        <Input type="text" name="title" id="title" placeholder="Enter title"  onChange={this.inputChangeHandler}/>
+                        <Input type="text" name="title" id="title" placeholder="Enter title"  onChange={this.inputChangeHandler} required/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="description">Text Area</Label>
-                        <Input type="textarea" name="description" id="description" placeholder="Enter your text" onChange={this.inputChangeHandler}/>
+                        <Label for="description">Description</Label>
+                        <Input type="textarea" name="description" id="description" placeholder="Enter your text" onChange={this.inputChangeHandler} required/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="image">Image</Label>
