@@ -48,9 +48,9 @@ class OnePost extends Component {
                         {post &&
                             Object.keys(post).map(item => (
                                 <div className='mt-3' key={post[item].id}>
-                                        <h1>{post[item].title}</h1>
+                                        <h1 className='mb-5'>{post[item].title}</h1>
                                         <CardSubtitle>At {post[item].date}</CardSubtitle>
-                                        <CardText>{post[item].description}</CardText>
+                                        <CardText className='mb-5'>{post[item].description}</CardText>
                                 </div>
                             ))
                         }
